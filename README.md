@@ -167,6 +167,12 @@ cd WarpGPT
 docker build -t warpgpt .
 docker run -d -p 5000:5000 warpgpt
 ```
+或
+
+```shell
+docker build -t warpgpt .
+docker run -d -p 5000:5000 --restart=unless-stopped warpgpt
+```
 
 ## License
 Apache-2.0
